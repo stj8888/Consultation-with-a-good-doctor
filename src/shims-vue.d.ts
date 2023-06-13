@@ -1,0 +1,1 @@
+declare module '@/view/index.vue'

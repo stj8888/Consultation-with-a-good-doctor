@@ -1,0 +1,51 @@
+{
+  "id": "4116758",
+  "name": "快捷工具",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5460560",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "ec2e",
+      "unicode_decimal": 60462
+    },
+    {
+      "icon_id": "5756003",
+      "name": "评价",
+      "font_class": "pingjia",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "17605438",
+      "name": "处方",
+      "font_class": "chufang",
+      "unicode": "e811",
+      "unicode_decimal": 59409
+    },
+    {
+      "icon_id": "17605462",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e814",
+      "unicode_decimal": 59412
+    },
+    {
+      "icon_id": "17605463",
+      "name": "档案",
+      "font_class": "dangan",
+      "unicode": "e815",
+      "unicode_decimal": 59413
+    },
+    {
+      "icon_id": "29457074",
+      "name": "医疗_医药箱",
+      "font_class": "yiliao_yiyaoxiang",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    }
+  ]
+}
