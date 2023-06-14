@@ -4,7 +4,7 @@
 
 <template>
     <div class="article-page">
-   article
+   <knowledge-list></knowledge-list>
     </div>
 </template>
 

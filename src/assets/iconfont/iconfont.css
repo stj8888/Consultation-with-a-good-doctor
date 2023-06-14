@@ -40,3 +40,54 @@
 .icon-g7:before {
   content: "\e623";
 }
+.icon-chaxun:before {
+  content: "\ec4c";
+}
+
+.icon--yiliao-yisheng:before {
+  content: "\e62c";
+}
+
+.icon-wenzhen:before {
+  content: "\e816";
+}
+
+.icon-menzhen:before {
+  content: "\e663";
+}
+
+.icon-yaopindingdan:before {
+  content: "\e68c";
+}
+
+.icon-wodechufang:before {
+  content: "\e661";
+}
+
+.icon-jiankangdangan:before {
+  content: "\e746";
+}
+
+.icon-kefu:before {
+  content: "\ec2e";
+}
+
+.icon-pingjia:before {
+  content: "\e623";
+}
+
+.icon-chufang:before {
+  content: "\e811";
+}
+
+.icon-dizhi:before {
+  content: "\e814";
+}
+
+.icon-dangan:before {
+  content: "\e815";
+}
+
+.icon-yiliao_yiyaoxiang:before {
+  content: "\e642";
+}

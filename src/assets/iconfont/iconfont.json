@@ -6,6 +6,55 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5961297",
+      "name": "查询",
+      "font_class": "chaxun",
+      "unicode": "ec4c",
+      "unicode_decimal": 60492
+    },
+    {
+      "icon_id": "11227069",
+      "name": "6-医疗-医生",
+      "font_class": "-yiliao-yisheng",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "17605454",
+      "name": "问诊",
+      "font_class": "wenzhen",
+      "unicode": "e816",
+      "unicode_decimal": 59414
+    },
+    {
+      "icon_id": "26847631",
+      "name": "门诊",
+      "font_class": "menzhen",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "27340845",
+      "name": "药品订单",
+      "font_class": "yaopindingdan",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "29941080",
+      "name": "我的处方",
+      "font_class": "wodechufang",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "30410468",
+      "name": "健康档案",
+      "font_class": "jiankangdangan",
+      "unicode": "e746",
+      "unicode_decimal": 59206
+    },
+    {
       "icon_id": "5460560",
       "name": "客服",
       "font_class": "kefu",
