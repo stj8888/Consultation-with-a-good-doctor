@@ -21,6 +21,35 @@ const routes = [
         path:'/user/patient',
         component:() => import('@/view/User/PatientPage.vue'),
         meta:{title:'家庭档案'}
+    },
+
+    {
+        path:'/consult/fast',
+        component:() => import('@/view/Consult/ConsultFast.vue'),
+        meta:{title:'急速问诊'}
+    },
+    {
+        path:'/consult/dep',
+        component:() => import('@/view/Consult/ConsultDep.vue'),
+        meta:{title:'选择科室'}
+    },
+    {
+        path:'/consult/illness',
+        component: () => import('@/view/Consult/ConsultIllness.vue'),
+        meta:{title:'病情描述'}
+    },
+    {
+        path:'/consult/pay',
+        component:() => import('@/view/Consult/ConsultPay.vue'),
+        meta:{title:'问诊支付'}
+    },
+    {
+        path:'/room',
+        component:() => import('@/view/Room/index.vue'),
+        meta:{title:'问诊室'},
+        beforeEnter(to:any){
+            if(to.query.payResult === 'false') return '/user/consult'
+        }
     }
 ]
 export default routes

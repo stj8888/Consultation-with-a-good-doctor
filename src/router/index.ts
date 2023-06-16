@@ -15,8 +15,8 @@ import 'nprogress/nprogress.css'
  })
 
  router.afterEach((to)=>{
-NProgress.done()
-  document.title=`${to.meta.title || ''}-优医问诊`
+  NProgress.done()
+  document.title=`优医问诊-${to.meta.title || ''}`
  })
  NProgress.configure({
   showSpinner:false

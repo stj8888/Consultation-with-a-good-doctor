@@ -31,6 +31,7 @@ export type UserInfo = OmitUser & {
 }
 }
 export type Patient = {
+[x: string] 
   id?:string,
   name:string,
   idCard:string,

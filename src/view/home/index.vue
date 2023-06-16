@@ -1,6 +1,9 @@
  <script setup lang="ts">
  import {ref} from 'vue'
- import FollowDoctor from './components/FollowDoctor.vue';
+ import FollowDoctor from './components/FollowDoctor.vue'
+ import { useConsultStore} from '@/stores/index'
+ import {ConsultType} from '@/enums'
+ const store = useConsultStore()
    const active = ref(0);
  </script>
 <template>
@@ -25,7 +28,7 @@
       </router-link>
       </van-col>
       <van-col span="8">
-      <router-link to="/" class="nav">
+      <router-link to="/consult/fast" @click="store.setType(ConsultType.Fast)" class="nav">
         <van-icon class='iconfont' class-prefix='icon' name="wenzhen" size="38px"></van-icon>
         <p class="title">急速问诊</p>
         <p class="desc">20s医生急速回复</p>

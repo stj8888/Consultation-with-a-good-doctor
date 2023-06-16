@@ -19,9 +19,11 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     VanActionBar: typeof import('vant/es')['ActionBar']
     VanActionBarButton: typeof import('vant/es')['ActionBarButton']
+    VanActionSheet: typeof import('vant/es')['ActionSheet']
     VanBadge: typeof import('vant/es')['Badge']
     VanButton: typeof import('vant/es')['Button']
     VanCell: typeof import('vant/es')['Cell']
+    VanCellG: typeof import('vant/es')['CellG']
     VanCellGroup: typeof import('vant/es')['CellGroup']
     VanCheckbox: typeof import('vant/es')['Checkbox']
     VanCol: typeof import('vant/es')['Col']
@@ -35,6 +37,9 @@ declare module 'vue' {
     VanPopup: typeof import('vant/es')['Popup']
     VanRow: typeof import('vant/es')['Row']
     VanSearch: typeof import('vant/es')['Search']
+    VanSidebar: typeof import('vant/es')['Sidebar']
+    VanSidebarItem: typeof import('vant/es')['SidebarItem']
+    VanSubmitBar: typeof import('vant/es')['SubmitBar']
     VanSwipe: typeof import('vant/es')['Swipe']
     VanSwipeItem: typeof import('vant/es')['SwipeItem']
     VanSwiper: typeof import('vant/es')['Swiper']
@@ -45,5 +50,6 @@ declare module 'vue' {
     VanTabbarItem: typeof import('vant/es')['TabbarItem']
     VanTabs: typeof import('vant/es')['Tabs']
     VanToast: typeof import('vant/es')['Toast']
+    VanUploader: typeof import('vant/es')['Uploader']
   }
 }

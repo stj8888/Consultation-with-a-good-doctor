@@ -17,3 +17,5 @@ export const getPatientList = () =>request('/patient/mylist')
 export const  addPatient = (patient:Patient) => request('/patient/add','POST',patient)
 export const editPatient = (patient:Patient) => request('/patient/update','PUT',patient)
 export const delPatient = (id:string) => request(`/patient/del/${id}`,'DELETE')
+// 查询患者详情
+export const getPatientDetail = (id: string|undefined) => request<Patient>(`/patient/info/${id}`)
