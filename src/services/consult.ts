@@ -1,4 +1,4 @@
-import type {knowledgePage,knowledgeParams,PageParams,DoctorPage,FollowType,TopDep,Image,ConsultOrderPreData,ConsultOrderPreParams, PartialConsult} from '@/types/consult'
+import type {knowledgePage,knowledgeParams,PageParams,DoctorPage,FollowType,TopDep,Image,ConsultOrderPreData,ConsultOrderPreParams, PartialConsult, ConsultOrderItem} from '@/types/consult'
 import {request} from '@/utils/request'
 export const getKnowledgePage = (params:knowledgeParams) => request<knowledgePage>('/patient/home/knowledge','GET',params)
 export const getDoctorPage = (params:PageParams) => request<DoctorPage>('/home/page/doc','GET',params)
@@ -22,3 +22,20 @@ export const getConsultOrderPayUrl = (params:{paymentMethod:0|1,orderId:string,p
 [x: string]: any  
 payurl:string
 }>('/patient/consult/pay','POST',params)
+export const getConsultOrderDetail = (orderId: string) =>
+  request<ConsultOrderItem>('/patient/consult/order/detail', 'GET', { orderId })
+// 查看处方
+export const getPrescriptionPic = (id: string) =>
+  request<{
+[x: string]: any 
+url: string 
+}>(`/patient/consult/prescription/${id}`)
+  // 评价问诊
+export const evaluateConsultOrder = (data: {
+  docId: string
+  orderId: string
+  score: number
+  content: string
+  anonymousFlag: 0 | 1
+}) => request<{ id: string }>('/patient/order/evaluate', 'POST', data)
+
