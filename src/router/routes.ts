@@ -50,6 +50,15 @@ const routes = [
         beforeEnter(to:any){
             if(to.query.payResult === 'false') return '/user/consult'
         }
+    },
+    {
+        path:'/user/consult',
+        component:() => import('@/view/User/ConsultPage.vue'),
+        meta:{title:'问诊记录'}
+    },{
+        path:'/user/consult/:id',
+        component:() => import('@/view/User/ConsultDetail.vue'),
+        meta:{title:'问诊详情'}
     }
 ]
 export default routes

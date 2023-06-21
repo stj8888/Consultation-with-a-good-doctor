@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { useConsultStore } from '@/stores'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const store =useConsultStore()
+const tansform = () => {
+    router.push('/user/consult')
+}
 </script>
 <template>
     <div class="consult-fast-page">
-  <cp-nav-bar title="急速问诊" right-text="问诊激记录"></cp-nav-bar>
+  <cp-nav-bar title="急速问诊" right-text="问诊激记录" @click-right="tansform"></cp-nav-bar>
   <div class="fast-log">
     <img src="@/assets/doctor.png" alt="">
     <p class="text"><span>20s</span>快速匹配专业医生</p>

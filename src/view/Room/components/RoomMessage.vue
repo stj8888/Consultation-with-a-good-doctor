@@ -8,6 +8,7 @@ import dayjs from 'dayjs'
 import {useUserStore} from '@/stores'
 import { getPrescriptionPic } from '@/services/consult'
 import evaluateCard from './evaluateCard.vue'
+import {useShowPrescription} from '@/components'
   const showPrescription = async (id?: string) => {
     if (id) {
       const res = await getPrescriptionPic(id)
@@ -25,11 +26,11 @@ const getIllnessTimeText = (time: IllnessTime) =>
   timeOptions.find((item) => item.value === time)?.label
   const getConsultFlagText = (flag: 0 | 1) =>
   flagOptions.find((item) => item.value === flag)?.label
+
 </script>
 <template>
   <!-- 患者卡片 -->
 <div v-for=" { msgType, msg,createTime,from } in list">
-  
   <div class="msg msg-illness" v-if="msgType === MsgType.CardPat">
     <div class="patient van-hairline--bottom" v-if="msg.consultRecord">
       <p>{{ msg.consultRecord.patientInfo.name }}

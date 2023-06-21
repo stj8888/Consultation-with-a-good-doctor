@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     Components: typeof import('./src/components/index.vue')['default']
     CpNavBar: typeof import('./src/components/cp-nav-bar.vue')['default']
+    CpPaySheet: typeof import('./src/components/CpPaySheet.vue')['default']
     CpRadioBtn: typeof import('./src/components/CpRadioBtn.vue')['default']
     Dialog: typeof import('./src/components/dialog.vue')['default']
     DialogPage: typeof import('./src/components/dialog/dialog-page.vue')['default']
@@ -35,6 +36,7 @@ declare module 'vue' {
     VanImage: typeof import('vant/es')['Image']
     VanList: typeof import('vant/es')['List']
     VanNavBar: typeof import('vant/es')['NavBar']
+    VanPopover: typeof import('vant/es')['Popover']
     VanPopup: typeof import('vant/es')['Popup']
     VanPullRefresh: typeof import('vant/es')['PullRefresh']
     VanRate: typeof import('vant/es')['Rate']
@@ -42,6 +44,7 @@ declare module 'vue' {
     VanSearch: typeof import('vant/es')['Search']
     VanSidebar: typeof import('vant/es')['Sidebar']
     VanSidebarItem: typeof import('vant/es')['SidebarItem']
+    VanSkeleton: typeof import('vant/es')['Skeleton']
     VanSubmitBar: typeof import('vant/es')['SubmitBar']
     VanSwipe: typeof import('vant/es')['Swipe']
     VanSwipeItem: typeof import('vant/es')['SwipeItem']

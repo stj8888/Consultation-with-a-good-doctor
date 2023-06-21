@@ -1,5 +1,6 @@
 import type {knowledgePage,knowledgeParams,PageParams,DoctorPage,FollowType,TopDep,Image,ConsultOrderPreData,ConsultOrderPreParams, PartialConsult, ConsultOrderItem} from '@/types/consult'
 import {request} from '@/utils/request'
+import type { ConsultOrderListParams, ConsultOrderPage } from '@/types/consult'
 export const getKnowledgePage = (params:knowledgeParams) => request<knowledgePage>('/patient/home/knowledge','GET',params)
 export const getDoctorPage = (params:PageParams) => request<DoctorPage>('/home/page/doc','GET',params)
 
@@ -38,4 +39,11 @@ export const evaluateConsultOrder = (data: {
   content: string
   anonymousFlag: 0 | 1
 }) => request<{ id: string }>('/patient/order/evaluate', 'POST', data)
+export const getConsultOrderList = (params: ConsultOrderListParams) =>
+  request<ConsultOrderPage>('/patient/consult/order/list', 'GET', params)
+// 取消订单
+export const cancelOrder = (id: string) => request(`/patient/order/cancel/${id}`, 'PUT')
+// 删除订单
+export const deleteOrder = (id: string) => request(`/patient/order/${id}`, 'DELETE')
+
 

@@ -79,7 +79,7 @@ confirmButtonText: '继续支付'
     return false
 }).catch(()=>{
     orderId.value = ''
-router.push('user/consult')
+   router.push('/user/consult')
 return true
 
 })

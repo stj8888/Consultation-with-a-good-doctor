@@ -38,6 +38,7 @@ onUnmounted(() => {
 const time = ref(dayjs().format('YYYY-MM-DD HH:mm:ss'))
 onMounted(async () => {
   const res = await getConsultOrderDetail(route.query.orderId as string)
+  // @ts-ignore
   consult.value = res.data.data
 
   // 建立链接，创建 socket.io 实例
@@ -83,6 +84,7 @@ onMounted(async () => {
   // 订单状态 在onMounted注册
   socket.on('statusChange', async () => {
     const res = await getConsultOrderDetail(route.query.orderId as string)
+    // @ts-ignore
     consult.value = res.data.data
   })
 
